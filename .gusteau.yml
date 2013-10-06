@@ -1,15 +1,13 @@
 before:
  - bundle exec berks install --path ./cookbooks
-after:
- - bundle exec rake spec
 
 environments:
   development:
     nodes:
       web:
         run_list:
-        - recipe[rvm::system]
-        - recipe[nginx::source]
+        - recipe[wrapper-rvm]
+        - recipe[nginx]
         - recipe[user]
         host: 33.33.230.196
         user: vagrant
