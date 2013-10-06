@@ -3,12 +3,14 @@ before:
 
 environments:
   development:
+    attributes:
+      users:
+      - deploy
+      - web
     nodes:
       web:
         run_list:
-        - recipe[wrapper-rvm]
-        - recipe[nginx]
-        - recipe[user]
+        - recipe[profile-web]
         host: 33.33.230.196
         user: vagrant
         password: vagrant

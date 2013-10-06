@@ -8,4 +8,4 @@
 #
 include_recipe "wrapper-rvm"
 include_recipe "nginx"
-include_recipe "users"
+include_recipe "user::data_bag"
