@@ -1,6 +1,7 @@
-# simpleserver
+# Omelette Cooker
 
-This is a test project to demonstrate the Chef development workflow.
+This is a test project to demonstrate the Chef development workflow. It demonstrates the wrapper cookbook pattern,
+as well as some more advanced patterns like using recipes-as-roles. All of this is for demonstration purposes only.
 
 ## Structure
 
