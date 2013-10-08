@@ -10,7 +10,9 @@ environments:
     nodes:
       web:
         run_list:
-        - recipe[profile-web]
+        - recipe[rvm::system]
+        - recipe[nginx]
+        - recipe[user]
         host: 33.33.230.196
         user: vagrant
         password: vagrant
